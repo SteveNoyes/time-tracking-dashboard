@@ -1,0 +1,54 @@
+:root {
+  /* Primary */
+  --purple-600: hsl(246, 80%, 60%);
+  /* work */
+  --orange-300 : hsl(15, 100%, 70%);
+  /* play */
+  --blue-300 : hsl(195, 74%, 62%);
+  /* study */
+  --pink-400 : hsl(348, 100%, 68%);
+  /* exercise */
+  --green-400 : hsl(145, 58%, 55%);
+  /* social */
+  --purple-700 : hsl(264, 64%, 52%);
+  /* self care */
+  --yellow-300 : hsl(43, 84%, 65%);
+  /* Neutral */
+  --navy-950: hsl(226, 43%, 10%);
+  --navy-900: hsl(235, 46%, 20%);
+  --purple-500: hsl(235, 45%, 61%);
+  --navy-200: hsl(236, 100%, 87%);
+}
+
+/* - Font size: 18px (card titles e.g. Work, Play) */
+
+@font-face {
+  font-family: 'Rubik Light';
+  src: url('../fonts/Rubik-Light.woff2') format('woff2'),
+      url('../fonts/Rubik-Light.woff') format('woff'),
+      url('../fonts/Rubik-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik Regular';
+  src: url('../fonts/Rubik-Regular.woff2') format('woff2'),
+      url('../fonts/Rubik-Regular.woff') format('woff'),
+      url('../fonts/Rubik-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik Medium';
+  src: url('../fonts/Rubik-Medium.woff2') format('woff2'),
+      url('../fonts/Rubik-Medium.woff') format('woff'),
+      url('../fonts/Rubik-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
