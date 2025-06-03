@@ -2,22 +2,22 @@
   /* Primary */
   --purple-600: hsl(246, 80%, 60%);
   /* work */
-  --orange-300 : hsl(15, 100%, 70%);
+  --orange-300: hsl(15, 100%, 70%);
   /* play */
-  --blue-300 : hsl(195, 74%, 62%);
+  --blue-300: hsl(195, 74%, 62%);
   /* study */
-  --pink-400 : hsl(348, 100%, 68%);
+  --pink-400: hsl(348, 100%, 68%);
   /* exercise */
-  --green-400 : hsl(145, 58%, 55%);
+  --green-400: hsl(145, 58%, 55%);
   /* social */
-  --purple-700 : hsl(264, 64%, 52%);
+  --purple-700: hsl(264, 64%, 52%);
   /* self care */
-  --yellow-300 : hsl(43, 84%, 65%);
+  --yellow-300: hsl(43, 84%, 65%);
   /* Neutral */
+  --navy-200: hsl(236, 100%, 87%);
   --navy-950: hsl(226, 43%, 10%);
   --navy-900: hsl(235, 46%, 20%);
   --purple-500: hsl(235, 45%, 61%);
-  --navy-200: hsl(236, 100%, 87%);
 }
 
 /* - Font size: 18px (card titles e.g. Work, Play) */
@@ -52,3 +52,112 @@
   font-display: swap;
 }
 
+body {
+  font-size: 16px;
+  background-color: var(--navy-950);
+}
+
+.tracking-dashboard {
+  display: grid;
+  grid-template-areas:
+    "report-profile"
+    "work-content" 
+    "play-content" 
+    "study-content"
+    "exercise-content" 
+    "social-content" 
+    "self-care-content";
+  gap: 15px;
+  padding: 5px;
+}
+.tracking-dashboard > div {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.tracking-dashboard > div.report-profile {
+  grid-area: report-profile;
+}
+
+.tracking-dashboard > div.content {
+  grid-area: content;
+}
+
+.tracking-dashboard {
+  width: 360px;
+  margin: 0 auto;
+}
+
+.report-profile {
+  border-radius: 14px;
+  background-color: var(--navy-900) !important;
+  width: 360px;
+  height: 200px;
+}
+
+.profile-wrapper {
+  border-radius: 14px;
+  width: 360px;
+  height: 130px;
+  display: flex;
+  background-color: var(--purple-600);
+  align-items: center;
+}
+
+.report-image img {
+  width: 70px;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin-left: 40px;
+}
+
+.report-profile-info {
+  padding-left: 20px;
+  color: var(--navy-200);
+
+}
+
+.report-profile-info h3 {
+  padding-bottom: 10px;
+}
+
+.report-profile-info h2 {
+  color: #ffffff;
+  font-size: 24px;
+  font-family: 'Rubik Light';
+}
+
+
+
+.profile-selection {
+  display: flex;
+  justify-content: space-around;
+  color: #ffffff;
+  padding: 25px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 850px) {
+
+  .tracking-dashboard {
+    display: grid;
+    grid-template-areas:
+      "report-profile work-content play-content study-content"
+      "report-profile exercise-content social-content self-care-content";
+    gap: 15px;
+    padding: 5px;
+  }
+  .tracking-dashboard > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+  }
+
+}
